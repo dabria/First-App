@@ -7,6 +7,10 @@ gem 'therubyracer'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+group :production do
+  gem 'pg', '0.12.2'
+end
+
 group :development do
   gem 'sqlite3', '1.3.5'
 end
